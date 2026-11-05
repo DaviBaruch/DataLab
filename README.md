@@ -29,9 +29,11 @@ API IBGE ──► data/raw/distritos.json ──► Transform (Pandas) ──�
 DataLab/
 ├── app/
 │   └── dashboard/          # Dashboard Streamlit
+│       ├── __init__.py     # Torna a pasta um pacote Python
 │       ├── main.py         # Interface (modos, estilos, mapa, gráficos)
 │       └── database.py     # Camada de consultas ao PostgreSQL (sem SQL duplicado no dashboard)
 ├── etl/
+│   ├── extract/            # Extração de dados (reservado)
 │   ├── transform/
 │   │   └── transform_distritos.py   # Etapa Transform: normaliza e limpa
 │   └── load/
@@ -76,7 +78,7 @@ DataLab/
 
 ```bash
 # 1. Clonar o repositório
-git clone https://github.com/<seu-usuario>/DataLab.git
+git clone https://github.com/DaviBaruch/DataLab.git
 cd DataLab
 
 # 2. Criar o ambiente virtual e instalar dependências
@@ -169,3 +171,4 @@ docker compose down        # encerra
 ---
 
 *Projeto de engenharia de dados: Docker, ETL (Python/Pandas), PostgreSQL e dashboards com Streamlit + Plotly.*
+
