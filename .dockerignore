@@ -1,0 +1,15 @@
+# ============================================================
+# DataLab — .dockerignore
+# Arquivos/pastas que NÃO entram no contexto de build da imagem.
+# Menos contexto = build mais rápido e imagem mais limpa.
+# ============================================================
+
+.git
+.env
+__pycache__
+.venv
+*.log
+data
+tests
+docs
+*.md

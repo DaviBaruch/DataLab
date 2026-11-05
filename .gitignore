@@ -1,0 +1,44 @@
+# ============================================================
+# DataLab — .gitignore
+# Arquivos/pastas que NÃO devem ser versionados no Git.
+# ============================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# --- Ambiente e segredos ---
+.env
+.env.*
+!.env.example
+*.local
+
+# --- Dados (não versionar dados no repositório) ---
+data/raw/
+data/processed/
+data/geo/
+*.csv
+*.parquet
+*.jsonl
+
+# --- Ferramentas do agente (configuração local) ---
+.abacusai/
+
+# --- Testes e cobertura (Fase 6) ---
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Logs ---
+*.log
+
+# --- Sistema operacional ---
+.DS_Store
+Thumbs.db
+
+# --- IDEs / editores ---
+.vscode/
+.idea/

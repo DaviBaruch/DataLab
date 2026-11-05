@@ -1,0 +1,22 @@
+# ============================================================
+# DataLab — Dependências Python
+# Fase 4: Pipeline ETL
+# ============================================================
+
+# Manipulação e transformação de dados
+pandas==3.1.0
+
+# Requisições HTTP para a API do IBGE
+requests==2.34.2
+
+# Conexão com PostgreSQL
+psycopg[binary]==3.3.6
+
+# Gerenciamento de variáveis de ambiente
+python-dotenv==1.2.4
+
+# Dashboard interativo
+streamlit==1.66.1
+
+# Gráficos interativos do dashboard (mapa coroplético, barras e rosca)
+plotly==7.1.0
